@@ -1,0 +1,51 @@
+@import '../src/views/styles/theme-variable.scss';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 100%;
+	font-family: 'PT Serif', serif;
+	scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+button,
+h6 {
+	font-family: 'Poppins', sans-serif;
+}
+
+p,
+span,
+div,
+a,
+li {
+	font-family: 'PT Serif', serif;
+}
+
+body {
+	margin: 0;
+	background-color: white;
+}
+
+ul {
+	list-style: none;
+}
+
+ul li {
+	margin: 0;
+	padding: 0;
+}
+
+a:active,
+a:visited,
+a:link {
+	color: $black-color;
+}

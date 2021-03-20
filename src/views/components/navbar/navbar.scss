@@ -1,0 +1,96 @@
+@import '../../styles/theme-variable.scss';
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+.nav-container {
+	background-color: $bluish-gray;
+	box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	height: $navbar-height;
+	align-items: center;
+	.nav-item {
+		display: flex;
+		align-items: center;
+		padding: 0 2rem;
+		div {
+			display: flex;
+			align-items: center;
+			span {
+				padding: 0 1rem;
+			}
+		}
+		h5 {
+			font-family: 'Monoton', cursive;
+			padding: 0 0.7rem;
+			color: $primary-color;
+			font-size: 2rem;
+			font-weight: 400;
+		}
+		ol {
+			margin: 0;
+			display: flex;
+			padding: 0 10px;
+			font-weight: 400;
+
+			li {
+				padding: 10px;
+				font-size: 0.83em;
+				list-style: none;
+				cursor: pointer;
+
+				a {
+					text-transform: uppercase;
+					text-decoration: none;
+					color: $text-color;
+					transition: color 0.2s;
+
+					&:hover {
+						cursor: pointer;
+						color: $primary-color;
+					}
+
+					&.active {
+						color: $primary-color;
+					}
+				}
+			}
+		}
+		.close-button {
+			color: $red-color;
+			position: relative;
+			right: 25px;
+			font-weight: bold;
+			cursor: pointer;
+		}
+		.user-icon {
+			color: rgb(143, 15, 15);
+			position: relative;
+			right: 25px;
+			font-weight: bold;
+			cursor: pointer;
+		}
+	}
+	.profile-item {
+		position: relative;
+		.profile {
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+			p {
+				margin: 5px 0;
+				&:hover {
+					color: $primary-color;
+				}
+				transition: 0.2s;
+				cursor: pointer;
+			}
+			position: absolute;
+			background-color: white;
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			top: 20px;
+			right: 30px;
+		}
+	}
+}

@@ -1,0 +1,50 @@
+@import '../../styles/theme-variable.scss';
+
+.info-container {
+	width: 400px;
+	margin: 0 auto;
+
+	.info-item-container {
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+		background-color: #eeee;
+		border-radius: 5px;
+		.info-content {
+			display: flex;
+			margin: 0 1rem;
+			flex-direction: column;
+
+			label {
+				margin-top: 1rem;
+				input {
+					width: 100%;
+					padding: 12px 20px;
+					margin: 0.5rem 0;
+					outline: none;
+					border: none;
+				}
+			}
+
+			button {
+				background: #7e47c5;
+				border-radius: 8px;
+				color: white;
+				padding: 1rem;
+				outline: none;
+				border: none;
+				cursor: pointer;
+				text-align: center;
+				margin: 2rem 0;
+			}
+		}
+		h3 {
+			width: 100%;
+			padding: 2rem 0 0 0;
+			display: flex;
+			color: $primary-color;
+			text-transform: uppercase;
+			font-weight: bold;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}

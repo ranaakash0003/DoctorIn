@@ -1,0 +1,56 @@
+.home-container {
+	width: 80%;
+	max-width: 1020px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	margin-top: 170px;
+	.card {
+		width: 45%;
+		height: 180px;
+		background: white;
+		margin: 10px;
+		border-radius: 10px;
+		box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
+		padding: 0 10px;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		.doctor-details {
+			padding: 0 30px;
+			h5 {
+				font-size: 1rem;
+				opacity: 0.6;
+			}
+			p {
+				margin: 10px 0 30px 0;
+				span {
+					padding: 2px 5px;
+					background: #f8e2ff;
+					color: #5d0d3a;
+					border-radius: 5px;
+				}
+			}
+			h6 {
+				font-size: 0.8rem;
+				opacity: 0.75;
+				padding: 0 5px;
+			}
+			.location-item {
+				display: flex;
+				align-items: center;
+			}
+		}
+		button {
+			width: 80px;
+			padding: 10px 5px;
+			outline: none;
+			cursor: pointer;
+			border: none;
+			background: #7e47c5;
+			color: white;
+			border-radius: 5px;
+		}
+	}
+}

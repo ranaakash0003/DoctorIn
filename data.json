@@ -1,0 +1,69 @@
+{
+    "doctors": [ 
+        {
+         "id": 1,
+         "name":"Dr. Rayhan Mahbub",
+         "org":"Kings London Hospital",
+         "availibility":{
+           "sun":"10:00 AM - 06:00 PM",
+           "wed":"06:00 PM - 09:00 PM"
+         },
+         "visitDurationInMin":15
+         },
+         {
+         "id": 2,
+         "name":"Dr. Mehedi Hasan",
+         "org":"Lab Aid Hospital",
+         "availibility":{
+           "sun":"11:00 AM - 05:00 PM",
+           "mon":"09:00 PM - 11:00 PM",
+           "thu":"11:00 AM - 02:00 PM"
+         },
+         "visitDurationInMin":15
+         },
+        {
+         "id": 3,
+         "name":"Dr. Alamin Hossain",
+         "org":"Dahaka Medical College",
+         "availibility":{
+           "sun":"12:00 PM - 06:00 PM",
+           "mon":"09:00 PM - 11:00 PM",
+           "thu":"11:00 AM - 02:00 PM"
+         },
+         "visitDurationInMin":15
+         },
+        {  
+        "id": 4,
+         "name":"Dr. Shuvo",
+         "org":"LIberty Hospital",
+         "availibility":{
+           "sun":"11:00 AM - 02:00 PM",
+           "mon":"09:00 PM - 11:00 PM",
+           "thu":"10:00 AM - 03:00 PM"
+         },
+         "visitDurationInMin":15
+         },
+        {
+         "id": 5,
+         "name":"Dr. Riya",
+         "org":"CBMCB Hospital, Mymensingh",
+         "availibility":{
+           "sun":"09:00 AM - 03:00 PM",
+           "mon":"12:00 PM - 11:00 PM",
+           "thu":"10:00 AM - 05:00 PM"
+         },
+         "visitDurationInMin":15
+         },
+        {
+         "id": 6,
+         "name":"Dr. Shorif Hasan",
+         "org":"Mymensingh Medical College",
+         "availibility":{
+           "sun":"10:00 AM - 06:00 PM",
+           "mon":"09:00 PM - 11:00 PM",
+           "thu":"11:00 AM - 02:00 PM"
+         },
+         "visitDurationInMin":15
+         }
+       ]
+   }

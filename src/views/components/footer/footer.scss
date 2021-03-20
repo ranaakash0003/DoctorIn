@@ -1,0 +1,51 @@
+@import '../../styles/theme-variable.scss';
+
+.footer {
+	width: 100%;
+	background-color: $footer-color;
+	position: absolute;
+	bottom: 0;
+
+	.footer-container {
+		padding-top: 3em;
+
+		.footer-bottom {
+			border-top: 1px solid $dark-gray;
+			padding: 3em 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin: 0 30px;
+
+			.logo {
+				li {
+					font-size: 1.5rem;
+					font-family: 'Roboto', sans-serif;
+					font-weight: 700;
+					color: $light-color;
+
+					&:hover {
+						cursor: pointer;
+						color: darken($primary-color, 5);
+					}
+				}
+			}
+
+			.links {
+				display: flex;
+				li {
+					font-size: 0.88rem;
+					font-family: 'Roboto', sans-serif;
+					font-weight: 300;
+					color: lighten($dark-gray, 20);
+					padding-left: 1.5em;
+
+					&:hover {
+						cursor: pointer;
+						color: $primary-color;
+					}
+				}
+			}
+		}
+	}
+}
