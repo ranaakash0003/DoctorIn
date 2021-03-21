@@ -1,3 +1,5 @@
+@import '../../styles/theme-variable.scss';
+
 .home-container {
 	width: 80%;
 	max-width: 1020px;
@@ -6,19 +8,22 @@
 	justify-content: center;
 	flex-flow: row wrap;
 	margin-top: 170px;
+
 	.card {
-		width: 45%;
-		height: 180px;
 		background: white;
 		margin: 10px;
 		border-radius: 10px;
 		box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
 		padding: 0 10px;
 		display: flex;
+		flex: 1 1 25%;
 		justify-content: space-evenly;
+
 		align-items: center;
 		.doctor-details {
-			padding: 0 30px;
+			padding: 60px 30px;
+			flex: 1 1 25%;
+			margin: 0 10px;
 			h5 {
 				font-size: 1rem;
 				opacity: 0.6;
@@ -27,8 +32,8 @@
 				margin: 10px 0 30px 0;
 				span {
 					padding: 2px 5px;
-					background: #f8e2ff;
-					color: #5d0d3a;
+					background: $span-background;
+					color: $span-color;
 					border-radius: 5px;
 				}
 			}
@@ -45,6 +50,7 @@
 		button {
 			width: 80px;
 			padding: 10px 5px;
+			margin-right: 10px;
 			outline: none;
 			cursor: pointer;
 			border: none;
@@ -53,4 +59,10 @@
 			border-radius: 5px;
 		}
 	}
+}
+.loading-container {
+	height: 100vh;
+	// display: flex;
+	// justify-content: center;
+	// align-items: center;
 }

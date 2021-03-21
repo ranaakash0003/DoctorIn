@@ -3,12 +3,11 @@
 .footer {
 	width: 100%;
 	background-color: $footer-color;
-	position: absolute;
-	bottom: 0;
+	margin-top: auto;
 
 	.footer-container {
 		padding-top: 3em;
-
+		margin-top: 170px;
 		.footer-bottom {
 			border-top: 1px solid $dark-gray;
 			padding: 3em 0;

@@ -5,6 +5,7 @@ import DayPicker from 'react-day-picker'
 import moment from 'moment'
 import Modal from '../../components/modal'
 import InfoFOrm from '../../components/infor-form'
+import LOADER from '../../../assets/image/loader.gif'
 import './booking.scss'
 import 'react-day-picker/lib/style.css'
 
@@ -109,29 +110,36 @@ const Booking = () => {
 
 	return (
 		<div className='booking-container'>
-			<div>
-				{!isFetching && doctor ? 	
-					<DayPicker
-						disabledDays={new Date()}
-						modifiers={{ ...getWeek() }}
-						modifiersStyles={{ ...getSelectedDayStyle() }}
-						onDayClick={handleDayClick}
-					/> : 'loading'
-				}
-			</div>
-			{ booking ?
-				<h3>available slots of {doctor.name}</h3>:
-				<h3>Please select from above active dates</h3>
-			}
-			<div className='time-slot-container'>
-				{allTimes?.map((time) => (
-					<div className='slot-card' key={time}>
-						<span>{bookingDay}</span>
-						<h5>{time}</h5>
-						<button onClick={handleModal}>Book</button>
-					</div>	
-				))}
-			</div>
+			{isFetching ? 
+				(
+					<div className='loading-container'>
+						<img src={LOADER} alt=''/>
+					</div>
+				) : 
+				(	
+					<>
+						<DayPicker
+							disabledDays={new Date()}
+							modifiers={{ ...getWeek() }}
+							modifiersStyles={{ ...getSelectedDayStyle() }}
+							onDayClick={handleDayClick}
+						/>
+
+						{ booking ?
+							<h3>Available slots of {doctor.name}</h3>:
+							<h3>Please select from above active dates</h3>
+						}
+						<div className='time-slot-container'>
+							{allTimes?.map((time) => (
+								<div className='slot-card' key={time}>
+									<span>{bookingDay}</span>
+									<h5>{time}</h5>
+									<button onClick={handleModal}>Book Now</button>
+								</div>	
+							))}
+						</div>
+					</>)}
+		
 			<Modal 
 				show={showModal}
 				handleClose={handleModal}>

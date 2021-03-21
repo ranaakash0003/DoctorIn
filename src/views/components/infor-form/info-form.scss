@@ -8,6 +8,7 @@
 		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 		background-color: #eeee;
 		border-radius: 5px;
+		padding: 0 10px;
 		.info-content {
 			display: flex;
 			margin: 0 1rem;
@@ -42,7 +43,10 @@
 			display: flex;
 			color: $primary-color;
 			text-transform: uppercase;
-			font-weight: bold;
+			font-family: 'Monoton', cursive;
+			font-weight: 600;
+			font-size: 1.2rem;
+			word-spacing: 15px;
 			align-items: center;
 			justify-content: center;
 		}

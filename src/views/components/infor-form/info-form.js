@@ -9,8 +9,11 @@ const Login = () => {
 	const [reason, setreason] = useState('')
 
 	const handleSubmit = () => {
-		if( !name || !mobile){
-			alert('Name and Mobile are required')
+		if( !name || !mobile || !age || !reason){
+			alert('Please fill up the form correctly')
+		}
+		else {
+			alert('Perfect saved successfully...')
 		}
 	}
 
@@ -32,6 +35,11 @@ const Login = () => {
 					<label htmlFor='mobile'>Mobile
 						<input 
 							type='number' 
+							maxLength={11}
+							size={1}
+							min='0'
+							max='9'
+							pattern='[0-9]{1}'
 							name='mobile'
 							id='mobile'
 							placeholder='01677122841'
@@ -44,6 +52,8 @@ const Login = () => {
 							type= 'number'
 							name='age'
 							id='age'
+							min='0'
+							max='9'
 							placeholder='10'
 							value={age}
 							onChange={(e) => setAge(e.target.value)}

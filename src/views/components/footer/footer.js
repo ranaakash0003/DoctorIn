@@ -4,16 +4,16 @@ import './footer.scss'
 const Footer = () => {
 	return (
 		<footer className='footer'>
-			<div className='container footer-container'>
+			<div className='footer-container'>
 				<div className='footer-bottom'>
 					<ul className='logo'>
-						<li>Showtime</li>
+						<li>Doctorin</li>
 					</ul>
 					<ul className='links'>
 						<li>@ {new Date().getFullYear()} All right reserved</li>
 					</ul>
 					<ul className='links'>
-						<li>Audio Description</li>
+						<li>About Us</li>
 						<li>Privacy Policy</li>
 						<li>Terms Of Use</li>
 					</ul>

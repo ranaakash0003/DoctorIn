@@ -3,11 +3,18 @@
 .booking-container {
 	width: 60%;
 	margin: 0 auto;
+	.loading-container {
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 	h3 {
 		text-align: center;
-		margin: 70px 0 30px 0;
+		margin: 50px 0 30px 0;
 		color: $dark-gray;
 		font-weight: 200;
+		font-size: 1.1rem;
 	}
 	.time-slot-container {
 		width: 80%;
@@ -35,13 +42,13 @@
 			}
 			span {
 				padding: 2px 5px;
-				background: #f8e2ff;
-				color: #5d0d3a;
+				background: $span-background;
+				color: $span-color;
 				font-size: 1.2rem;
 				text-transform: capitalize;
 			}
 			button {
-				width: 80px;
+				width: 50%;
 				padding: 10px 5px;
 				outline: none;
 				cursor: pointer;

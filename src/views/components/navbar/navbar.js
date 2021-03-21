@@ -20,7 +20,7 @@ const Navbar = () => {
 	return (
 		<nav className='nav-container'>
 			<div className='nav-item'>
-				<h5>DoctorIn</h5>
+				<h5>DOCTORIN</h5>
 				<ol>
 					{navItems.map((item) => {
 						return (
