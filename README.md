@@ -1,8 +1,8 @@
-# DoctorIn
+# Doctorin
 
 API genarated using typicode\
 api: https://my-json-server.typicode.com/ranaakash0003/demo
-Clone the repository and run\
+\Clone the repository and run\
 npm install\
 npm start\
 run with your desired port default port is 3000\
