@@ -1,7 +1,7 @@
 # DoctorIn
 
 API genarated using typicode\
-api: https://my-json-server.typicode.com/ranaakash0003/demo\
+api: https://my-json-server.typicode.com/ranaakash0003/demo
 Clone the repository and run\
 npm install\
 npm start\
